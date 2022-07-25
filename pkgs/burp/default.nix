@@ -1,11 +1,11 @@
 { lib, stdenv, fetchurl, jdk11, runtimeShell, unzip, chromium }:
 
 stdenv.mkDerivation rec {
-  pname = "burpsuitepro";
+  pname = "burp";
   version = "2022.7.1";
   
   src = fetchurl {
-    name = "burpsuitepro.jar";
+    name = "burp_pro.jar";
     urls = [
       "https://portswigger-cdn.net/burp/releases/download?product=pro&type=Jar"
     ];
@@ -22,8 +22,8 @@ stdenv.mkDerivation rec {
     eval "$(${unzip}/bin/unzip -p ${src} chromium.properties)"
     mkdir -p "$HOME/.BurpSuite/burpbrowser/$linux64"
     ln -sf "${chromium}/bin/chromium" "$HOME/.BurpSuite/burpbrowser/$linux64/chrome"
-    exec ${jdk11}/bin/java -jar ${src} "$@"' > $out/bin/burpsuitepro
-    chmod +x $out/bin/burpsuitepro
+    exec ${jdk11}/bin/java -jar ${src} "$@"' > $out/bin/burp
+    chmod +x $out/bin/burp
 
     runHook postInstall
   '';
