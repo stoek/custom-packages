@@ -22,8 +22,8 @@ stdenv.mkDerivation rec {
     eval "$(${unzip}/bin/unzip -p ${src} chromium.properties)"
     mkdir -p "$HOME/.BurpSuite/burpbrowser/$linux64"
     ln -sf "${chromium}/bin/chromium" "$HOME/.BurpSuite/burpbrowser/$linux64/chrome"
-    exec ${jdk11}/bin/java -jar ${src} "$@"' > $out/bin/burpsuite
-    chmod +x $out/bin/burpsuite
+    exec ${jdk11}/bin/java -jar ${src} "$@"' > $out/bin/burpsuitepro
+    chmod +x $out/bin/burpsuitepro
 
     runHook postInstall
   '';
