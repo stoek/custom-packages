@@ -5,7 +5,7 @@ stdenv.mkDerivation rec {
   version = "2022.7.1";
   
   src = fetchurl {
-    name = "burpsuite.jar";
+    name = "burpsuitepro.jar";
     urls = [
       "https://portswigger-cdn.net/burp/releases/download?product=pro&type=Jar"
     ];
