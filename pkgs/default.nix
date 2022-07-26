@@ -2,5 +2,5 @@ pkgs:
 with pkgs;
 {
   #List all packages you want to put in the package overlay in here.
-  burpsuite-pro = callPackage ./burpuite-pro {};
+  burpsuite-pro = callPackage ./burpsuite-pro {};
 }
