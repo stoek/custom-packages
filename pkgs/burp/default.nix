@@ -7,7 +7,7 @@ stdenv.mkDerivation rec {
   src = fetchurl {
     name = "burp_pro.jar";
     urls = [
-      "https://portswigger-cdn.net/burp/releases/download?product=pro&type=Jar"
+      "https://portswigger-cdn.net/burp/releases/download?product=pro&Version=2022.7.1&type=Jar"
     ];
     sha256 = "sha256-svVOafvp8Kv0wp8HduLZmxUo7Hz7zOP/bk3DdhH1zO0=";
   };
