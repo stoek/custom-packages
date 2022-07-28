@@ -2,14 +2,14 @@
 
 stdenv.mkDerivation rec {
   pname = "burp";
-  version = "2022.7";
+  version = "2022.8";
   
   src = fetchurl {
     name = "burp_pro.jar";
     urls = [
       "https://portswigger-cdn.net/burp/releases/download?product=pro&version=${version}&type=Jar"
     ];
-    sha256 = "sha256-9G5RtVcDDqUzRhMK8oilUE/FDrTrxqCbf8u1NuAq67I=";
+    sha256 = "sha256-1G5RtVcDDqUzRhMK8oilUE/FDrTrxqCbf8u1NuAq67I=";
   };
 
   dontUnpack = true;
