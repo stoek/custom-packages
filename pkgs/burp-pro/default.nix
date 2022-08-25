@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   pname = "burp";
-  version = "2022.8";
+  version = "2022.8.2";
   
   src = fetchurl {
     name = "burp_pro.jar";
