@@ -1,5 +1,6 @@
 # What is this?
-This is my personal nix pkgs overlay. I put all the extra packages I want to deploy on my systems here.
+This is my personal nix pkgs overlay. I put all the extra packages I want to deploy on my systems here. 
+Almost like my own little software repo. 
 
 # How to use it
 Simply add this flake to your config as an overlay.
@@ -8,7 +9,7 @@ Import flake:
 ```nix
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
-    nixpkgs-overlay.url = "github:wiltaylor/nixpkgs-overlay";
+    nixpkgs-overlay.url = "github:stoek/stixoverlay";
   };
 ```
 
